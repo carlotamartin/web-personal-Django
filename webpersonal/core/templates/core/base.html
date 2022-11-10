@@ -18,25 +18,3 @@
     {% block content %}{% endblock %}
 </body>
 </html>
-
-<title>{% block title %}{% endblock %} | Juan Pérez (Ingeniero)</title>
-
-<div class="collapse navbar-collapse" id="navbarResponsive">
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'home' %}">Portada</a>
-        </li>
-        <li class="nav-item">
-                <a class="nav-link" href="{% url 'about-me' %}">Acerca de</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'portfolio' %}">Portafolio</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'contact' %}">Contacto</a>
-        </li>
-        <li class="nav-item">
-            <a class="navbar-brand" href="{% url 'home' %}">Juan Pérez</a>
-        </li>
-    </ul>
-</div>
