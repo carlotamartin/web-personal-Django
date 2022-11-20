@@ -23,14 +23,12 @@ from portfolio import views as portfolio_views
 from django.conf import settings
 from django.conf.urls.static import static
 
-
 urlpatterns = [
-    path('', core_views.home, name="home"),
-    path('about/', core_views.about, name="about"),
-    path('portfolio/', core_views.portfolio, name="portfolio"),
-    path('contact/', core_views.contact, name="contact"),
-    path('admin/', admin.site.urls),
-
+    path('', core_views.home, name="base.html"),
+    path('about.html/', core_views.about, name="about.html"),
+    path('portfolio.html/', core_views.portfolio, name="portfolio.html"),
+    path('contact.html/', core_views.contact, name="contact.html"),
+    path('admin.html/', admin.site.urls),
 ]
 
 if settings.DEBUG:
